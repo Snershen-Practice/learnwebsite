@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charseet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1" />
+    <title>Fashion Diary</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <link rel="stylesheet" type="text/css" href="gallery.css" />
+    <link rel="stylesheet" type="text/css" href="chapter.css" />
+</head>
+<body>
+    <nav>
+        <div class="title">Fashion Diary</div>
+        <div class="menu">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Blog</div>
+            <div class="item">Contact</div>
+        </div>
+        <div  id="mobile-menu" class="mobile-menu">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Blog</div>
+            <div class="item">Contact</div>
+            <div onclick="closeMobileMenu();" class="close">X</div>
+        </div>
+        <div onclick="showMobileMenu();" class="mobile-menu-trigger">
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="memo">
+            STYLE IS A<br/>CHOICE.<br/>MAKE YOURS.
+        </div>
+    </nav>
+
+    <section class="gallery">
+        <div class="col">
+            <div class="block picture pic1">
+                <div class="words">
+                    <div class="title">Product</div>
+                    <div class="content">Introduction</div>
+                    <div class="button">
+                        <span class="btn">Read More</span></div>
+                </div>
+            </div>
+            <div class="block text">
+                <div class="words">
+                    <div class="title">Company</div>
+                    <div class="content">What's news?</div>
+                    <div class="button">
+                    <span class="btn">Read More</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="block text">
+                <div class="words">
+                    <div class="title">Question</div>
+                    <div class="content">Answer</div>
+                    <div class="button">
+                    <span class="btn">Read More</span></div>
+                </div>
+            </div>
+            <div class="block picture pic2">
+                <div class="words">
+                    <div class="title">Earings</div>
+                    <div class="content">Introduction</div>
+                    <div class="button">
+                    <span class="btn">Read More</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="foot">
+        <div class="top">
+            <div class="left"></div>
+            <div class="word right">
+                <div class="word title">What Do I Want?</div>
+                <div class="word text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</div> 
+                <div class="word small">October 11, December</div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left"></div>
+            <div class="word right">
+                <div class="word title">There Are Something Special</div>
+                <div class="word text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</div>     
+                <div class="word small">October 11, December</div>
+            </div>
+        </div>
+    </section>
+    <div class="outer">All Rights Reserved.</div>
+
+    <script src="main.js"></script>
+</body>
+</html>

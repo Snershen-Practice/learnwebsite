@@ -1,0 +1,94 @@
+section.gallery{
+    height: 700px;
+    display:flex;
+    justify-content:center;
+    padding: 50px 0px;
+}
+
+section.gallery>.col{
+    width:500px;margin:20px;
+}
+
+/* section.gallery>.col>.block */
+section.gallery>.col>.block{
+    margin-bottom:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* background-color:grey; */
+}
+
+section.gallery>.col>.block>.words{
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+section.gallery>.col>.block>.words>.title{
+    font-family:"Lora", "serif";
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+section.gallery>.col>.block>.words>.content{
+    font-family:"caslon", serif;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+section.gallery>.col>.block>.words>.button{
+    font-family:"caslon", "serif";
+    font-size: 0.8em;
+}
+
+section.gallery>.col>.block>.words>.button>.btn{
+    border: solid 1px ;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    transition:background-color,0.3s;
+}
+
+section.gallery>.col>.block>.words>.button>.btn:hover{
+    background-color: rgba(0,0,0,1);
+}
+
+/* section.gallery>.col>.picture */
+section.gallery>.col>.picture{
+    width:100%;height:400px;
+    text-align:center;
+}
+
+section.gallery>.col>.pic1{
+    background-image: url(gallery1.jpg);
+    background-size: cover;
+}
+
+section.gallery>.col>.pic2{
+    background-image: url(gallery2.jpg);
+    background-size: cover;
+}
+
+
+/* section.gallery>.col>.text */
+section.gallery>.col>.text{
+    width:100%;height:300px;
+    text-align:center;
+    border: solid 2px #AEAEAE;
+    box-sizing:border-box;
+    line-height: 1.5em;
+}
+
+@media (max-width:800px){
+    section.gallery{
+        flex-wrap: wrap;
+    }
+
+    section.gallery>.col{
+        width:90%;
+        margin:20px 0px;
+    }
+
+    section.gallery>.col:last-child{
+        display:flex;flex-direction:column-reverse;
+
+}
